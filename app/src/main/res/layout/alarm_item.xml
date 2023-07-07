@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Widok elementu listy alarmów, składający się z TextView (alarmTimeTextView) wyświetlającego czas alarmu
+oraz Button (deleteAlarmButton) do usuwania alarmu z listy. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+    <TextView
+        android:id="@+id/alarmTimeTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_weight="1" />
+    <Button
+        android:id="@+id/deleteAlarmButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delete_button_text"
+        android:textColor="@android:color/black"
+        android:background="#FF0000"
+        android:onClick="deleteAlarm" />
+</LinearLayout>
